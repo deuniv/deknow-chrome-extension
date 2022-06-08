@@ -41,8 +41,6 @@ const catchURL = () => {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         submitURL(tabs[0].url)
         displayAlert()
-        setTimeout(() => {res.innerHTML = ''},1500)
-        
     })
 }
 
