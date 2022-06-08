@@ -2,7 +2,7 @@
 const apiURL = 'http://159.89.28.183:5000/details?url='
 
 //When the function it's done, I'll display this message for a short time
-function displayTextAlert(){
+const displayTextAlert = () => {
 
     let alertElement = `<div id='alertSent' 
         style='position: fixed;
