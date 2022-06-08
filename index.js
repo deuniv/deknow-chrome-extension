@@ -1,30 +1,24 @@
 //This param apiURL can be changed if needed
-//const apiURL = 'http://159.89.28.183:5000/details?url='
-const apiURL = 'http://127.0.0.1:3000'
-
-const res = document.getElementById('response')
+const apiURL = 'http://159.89.28.183:5000/details?url='
 
 //When the function it's done, I'll display this message for a short time
 function displayTextAlert(){
 
     let alertElement = `<div id='alertSent' 
-    style='position: sticky;
-        top: 20px;
-        width: 100%;
-        display:flex;
-        justify-content: center;
-        z-index:999;
-        background-color :dark;'>
-            <div style='background-color :dark;'>
-                <h1>PAGE SAVED</h1>
-            </div>
-    </div>`
-    document.body.prepend(alertElement.to
-        )
+        style='position: fixed;
+            top: 0px;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            z-index:999;
+            background-color: #000000;'>
+                    <h1 style='color: #FFF;'>PAGE SAVED</h1>
+        </div>`
+    document.body.innerHTML +=(alertElement)
     setTimeout(() => {document.getElementById('alertSent').remove()}, 2000)
   }
 
-//function to call the alert
+//function to call the message alert
 const displayAlert = () => {
     chrome.tabs.query( {active: true, currentWindow: true },
         (tabs) =>
@@ -64,4 +58,4 @@ const submitURL = async (value) => {
     }).catch (err => console.log(err))
 }
 
-displayAlert()
+catchURL()
