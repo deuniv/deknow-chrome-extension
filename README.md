@@ -2,12 +2,10 @@
 
 Basic Setup
 
--Download `DeUniv-chrome-extension.crx`
+-Download all the files
 -Go to `chrome://extensions/` and activate Developer Mode (up to the right corner).
--Drag the `DeUniv-chrome-extension.crx` file to the extensions window and install.
-
+-Select `Upload unpacked folder` and select the folder where you saved the files previously downloaded.
 How to use
 
 -Go to the extensions panel and pin the extension.
--Open the extension.
--Paste the URL you want to send to server and press `SAVE INPUT` or just press the `SAVE TAB` button (to send the active tab of your chrome).
+-Open the extension and it will display a message in the active tab with the message `URL SAVED`.
