@@ -26,7 +26,7 @@ const displayTextAlert = () => {
                     <h1 style='color: #FFF;'>PAGE SAVED</h1>
             </div>`
             document.body.innerHTML +=(alertElement)
-            setTimeout(() => {document.getElementById('alertSent').remove()}, 2000)
+            setTimeout(() => {document.getElementById('alertSent').remove()}, 10000)
         })
         .catch (err => {
             console.log(err)
@@ -41,7 +41,7 @@ const displayTextAlert = () => {
                     <h1 style='color: #FFF;'>PAGE COULDN'T BE SENT</h1>
             </div>`
             document.body.innerHTML +=(alertElement)
-            setTimeout(() => {document.getElementById('alertSent').remove()}, 2000)
+            setTimeout(() => {document.getElementById('alertSent').remove()}, 10000)
         })
     }
 
