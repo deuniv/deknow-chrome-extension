@@ -6,7 +6,7 @@ const displayTextAlert = () => {
 
     //POST request to server
     const submitURL = async (value) => {
-        await fetch('https://rocky-beyond-93496.herokuapp.com/'+apiURL+encodeURIComponent(value), {
+        await fetch(apiURL+encodeURIComponent(value), {
             method: 'POST',
             mode: 'cors',
             headers: {
